@@ -83,10 +83,8 @@ class MyappState extends State<Myapp> {
 
   void _validateInputs() {
     if (_formKey.currentState.validate()) {
-//    If all data are correct then save data to out variables
       _formKey.currentState.save();
     } else {
-//    If all data are not valid then start auto validation.
       setState(() {
         _autoValidate = true;
       });
@@ -209,9 +207,9 @@ class MyappState extends State<Myapp> {
                                   ),
                                 ),
                               ),
-
+                              
                               Container(
-                                width: 200,
+                                width: 330,
                                 child: TextFormField(
                                   validator: validateNumber,
                                   decoration: InputDecoration(
@@ -339,7 +337,7 @@ class MyappState extends State<Myapp> {
                     "Save",
                     style: TextStyle(color: Colors.white),
                   ),
-                  color: Colors.blue,
+                  color: Colors.purpleAccent,
                   onPressed: () {
                     _validateInputs();
                   },
