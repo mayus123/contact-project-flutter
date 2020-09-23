@@ -39,8 +39,6 @@ class MyappState extends State<Myapp> {
 
   String state;
 
-  String jenisKelamin = "";
-
   String all = '';
 
   List listMateri = ["Flutter", "Laravel", "React JS"];
@@ -61,8 +59,6 @@ class MyappState extends State<Myapp> {
             Text("Zip : ${controllerzip.text}"),
             Text("Email : ${controlleremail.text}"),
             Text("State : ${state}"),
-            Text("Gender : ${jenisKelamin}"),
-            Text("Materi yang diambil adalah ${materi}"),
             Text(all),
             RaisedButton(
               child: Text("OK"),
