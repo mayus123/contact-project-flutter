@@ -71,12 +71,6 @@ class MyappState extends State<Myapp> {
     showDialog(context: context, child: alertDialog);
   }
 
-  void pilihJK(String value) {
-    setState(() {
-      jenisKelamin = value;
-    });
-  }
-
   void _validateInputs() {
     if (_formKey.currentState.validate()) {
       _formKey.currentState.save();
